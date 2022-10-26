@@ -1,0 +1,76 @@
+body {
+    background-image: url(/assets/fondo-fezta.png);
+}
+.box-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(196, 196, 196, 0.35);
+    height: 870px;
+    margin-top: 105px;
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: currentColor;
+}
+
+.img-login {
+    position: relative;
+    width: 120px;
+    height: 110px;
+    border-radius: 90px;
+    margin-top: 50px;
+    
+}
+p {
+    width: 70%;
+}
+
+input {
+    
+    border: inherit;
+    border-radius: 20px;
+    padding: 10px 0 10px 0;
+    text-indent: 10px;
+    outline: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+input[type="reset"] {
+    padding: 0 0 0 0;
+    width: 50%;
+    margin-bottom: 20px;
+    margin: auto;
+    background-color: transparent;
+    bottom: 20px;
+    position: relative;
+    left: 91px;
+}
+
+input[type="submit"] {
+    
+    margin-top: -1px;
+    padding: 15px 20px 15px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 0;
+    background-color: rgba(196, 196, 196, 0.589);
+}
+
+input[type="submit"]:hover {
+    background-color: hsla(38, 63%, 54%, 1);
+    font-size: 0.9em;
+    color: white;
+}
+input[type="radio"] {
+    width: 15%;
+    margin: 0;
+    margin-top: 10px;
+}
+input[type="checkbox"] {
+    width: 15%;
+    margin: 0;
+    margin-top: 10px;
+}

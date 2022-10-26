@@ -1,0 +1,56 @@
+:root {
+    --main-floral-white: hsla(0, 0%, 98%, 0.785);
+    --main-pale-silver: hsl(38, 16%, 76%, 0.6);
+    --main-black-olive: hsl(34, 6%, 24%);
+    --main-eerie-black: hsl(40, 4%, 14%);
+    --main-flame: hsl(17, 83%, 54%);
+    --main-article-box: hsl(0, 0%, 35%);
+    --main-article-box-down: hsl(40, 4%, 51%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body {
+    background-image: url(/assets/fondo-fezta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    margin: 0;
+}
+
+
+main {
+    margin: auto;
+    max-width: 100%;
+    flex-grow: 1;
+    text-align: center;
+
+
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+.flex-item {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+    padding: 0.5rem;
+}
+.img-vertical {
+    width: 250px;
+    height: 350px;
+    box-shadow: -15px 20px 30px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+.img-horizontal {
+    width: 359px;
+    height: 195px;
+}

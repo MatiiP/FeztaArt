@@ -1,0 +1,281 @@
+:root {
+    --main-floral-white: hsla(0, 0%, 98%, 0.785);
+    --main-pale-silver: hsl(38, 16%, 76%, 0.6);
+    --main-black-olive: hsl(34, 6%, 24%);
+    --main-eerie-black: hsl(40, 4%, 14%);
+    --main-flame: hsl(17, 83%, 54%);
+    --main-article-box: hsl(0, 0%, 35%);
+    --main-article-box-down: hsl(40, 4%, 51%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+*, *::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/assets/fondo-fezta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;    
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*header*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 390px;
+    margin-bottom: 20px;
+}
+
+
+.navegador, .navegador::after, .navegador::before {
+    width: 100%;
+    padding: 15px 0 15px 0;
+    margin: 0;
+    margin-bottom: 30px;
+    background-color: var(--main-floral-white);
+}
+
+.lista-nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.list {
+    width: 60px;
+    height: 30px;
+}
+.menu {
+    /* display: inline-block; este sera en responsive */
+    display: none;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+}
+.list-menu {
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.list-menu:hover {
+    background-color: hsla(38, 63%, 54%, 1);
+
+}
+.dropbox {
+    position: absolute;
+    padding: 10px 10px;
+    display: none;
+}
+.menu:hover .dropbox {
+    display: block;
+}
+li {
+    font-size: 1.5em;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    list-style: none;
+
+}
+.lista-nav
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.logo {
+    width: 362px;
+    height: 311px;
+    cursor: crosshair;
+
+}
+/**main*/
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+#cuadros {
+    margin: auto;
+    padding: 0 10px 0 10px;
+    background-color: transparent;
+    font-size: 2em;
+    margin-bottom: 20px;
+
+}
+
+.boxs-horizontal {
+    height: 280px;
+    display: flex;
+    flex-flow:column wrap;
+    height: 450px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.boxs-vertical {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.img-vertical {
+    width: 250px;
+    height: 350px;
+}
+.box-horizontal {
+    width: 359px;
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+}
+.img-horizontal {
+    width: 359px;
+    height: 195px;
+}
+button {
+    background: rgba(196, 196, 196, 0.35);
+    border: 0.5px;
+    border-radius: 0 0 30px 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+button:hover {
+    background-color: hsla(38, 63%, 54%, 1);
+    font-size: 1.3em;
+}
+.button-horizontal {
+    
+    font-size: 1.2em;
+}
+/*caja contenedora del contacto y del inicio de sesion*/
+.contacto-inicio {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+/**box-contacto,*/
+.box-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    height: 480px;
+    background-color: rgba(196, 196, 196, 0.35);
+    border-radius: 30px;
+}
+.logo-steam {
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    box-shadow: rgba(0, 0, 0, 0.267) 0 0 2px 0;
+}
+.texto-contacto {
+    width: 75%;
+    
+}
+input {
+    border-radius: 20px;
+    box-shadow: hsla(0, 0%, 0%, 0.185) 4px;
+    border: 0px solid;
+    height: 20px;
+}
+input[type="email"] {
+    width: 100%;
+    outline: transparent;
+    text-indent: 10px;
+}
+input[type="submit"] {
+    padding: 8px 20px 22px 20px;
+    font-weight: bold;
+    background-color: rgba(196, 196, 196, 0.589);
+}
+input[type="submit"]:hover {
+    background-color: hsla(38, 63%, 54%, 1);
+    font-size: 0.9em;
+}
+textarea {
+    width: 100%;
+    outline: transparent;
+    border: 0;
+    text-indent: 6px;
+}
+/**Caja contenedora del Login, en pagina principal*/
+.box-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content:center ;
+    width: 40%;
+    background-color: rgba(196, 196, 196, 0.35);
+    height: 480px;
+    border-radius: 30px;
+}
+.img-login {
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    box-shadow: rgba(0, 0, 0, 0.267) 0 0 2px 0;
+}
+
+.email-ingreso {
+    padding: 10px 0 10px 0;
+}
+.password {
+    width: 100%;
+    margin-top: 5px;
+    outline: transparent;
+    text-indent: 10px;
+    padding: 10px 0 10px 0;
+}
+input[class="submit-ingresar"] {
+    padding: 10px 28px 26px 28px;
+    
+}
+/*footer*/
+footer {
+    width: 100%;
+    margin: 0;
+    
+    
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(76, 90, 88, 1);
+    height: 35px;
+    text-indent: 20px;
+    color: white;
+    text-align: initial;
+    align-items: center;
+
+}
+
+.ul-footer {
+    display: flex;
+    font-size: .8em;
+    margin: 0;
+    list-style-type: none;
+}
+
+.lista-footer {
+    color: white;
+}
